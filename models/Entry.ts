@@ -4,7 +4,7 @@ import { Entry } from '../interfaces';
 export interface IEntry extends Entry {}
 
 const entrySchema = new Schema({
-  description: { type: String, require: true },
+  description: { type: String, required: true },
   createdAt: { type: Number },
   status: {
     type: String,
